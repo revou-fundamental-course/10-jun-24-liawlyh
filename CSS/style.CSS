@@ -1,0 +1,84 @@
+body {
+    font-family: math;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(232, 202, 201), rgb(145, 168, 208));
+    color: black;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h4 {
+    margin-top: 0;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+textarea {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: large;
+    box-sizing: border-box;
+    text-align: center;
+    resize: none;
+    background-color: #ebe4e4;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    display: flex;
+   justify-content: center;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    color: black;
+    border-radius: 4px;
+}
+
+.green {
+    background-color: #4CAF50;
+}
+
+.red {
+    background-color: #f44336;
+}
+
+.blue {
+    background-color: #2196F3;
+}
+
+.result-container textarea,
+.conversion-calculate textarea {
+    background-color: #e9e9e9;
+    resize: none;
+}
+
+.formula-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.formula-info .subject-info {
+    font-weight: bold;
+}

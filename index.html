@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lia Konversi Suhu</title>
+    <!--Ini Link CSS-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Website Konversi Suhu</h1>
+    </header>
+
+    <!--Ini Main Content-->
+    <main>
+        <hr/>
+        <h4>Masukan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</h4>
+
+        <!--Section Celcius-->
+        <section class="input-container">
+            <header>
+                <h3>Celcius (&deg;C):</h3>
+            </header>
+            <textarea id="celsius-input"></textarea>
+        </section>
+
+        <section class="buttons-container">
+            <button class="button green" onclick="convertTemperature()">Konversi</button>
+            <button class="button red" onclick="resetForm()">Reset</button>
+            <button class="button blue" onclick="reverseConversion()">Reverse</button>
+        </section>
+
+         <!--Section Fahrenheit-->
+        <section class="result-container">
+            <section>
+                <header>
+                    <h3>Fahrenheit (&deg;F):</h3>
+                </header>
+                <textarea id="fahrenheit-output" readonly></textarea>
+            </section>
+
+            <!--Section Calculate-->
+            <section class="conversion-calculate">
+                <header>
+                    <h3>Conversion Calculation:</h3>
+                </header>
+                <textarea id="calculation-output" readonly></textarea>
+            </section>
+        </section>
+
+        <hr/>
+        <!--Section Formula/Info-->
+        <section class="formula-info">
+            <header>
+                <h1>Cara Konversi dari Celcius(&deg;C) ke Fahrenheit(&deg;F)</h1>
+            </header>
+            <p>Suhu <span class="subject-info">S</span> dalam derajat Fahrenheit(&deg;F) sama dengan suhu 
+                <span class="subject-info">S</span> dalam derajat Celcius(&deg;C)...
+            </p>
+
+            <p>
+                <span class="subject-info">S</span><sub>(&deg;F)</sub> = 
+                (<span class="subject-info">S</span><sub>(&deg;C)</sub> x 9/5) + 32
+            </p>
+            <p>atau</p>
+
+            <p>
+                <span class="subject-info">S</span><sub>(&deg;C)</sub> = 
+                (<span class="subject-info">S</span><sub>(&deg;F)</sub> - 32) / 1.8
+            </p>
+        </section>
+    </main>
+
+    <!--Ini Link Javascript-->
+    <script src="js/script.js"></script>
+</body>
+</html>
